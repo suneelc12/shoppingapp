@@ -1,1 +1,48 @@
-<DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>My  APP</title>
+        <style>
+         * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 25%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid black;
+  background: #f1f1f1;
+}  
+    .registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  font-size:medium;
+  margin: 15px 15px 15px 130px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+        </style>
+    </head>
+    <body>          
+    <form action="/setup" method="POST">
+        <div class="container">
+            <label for="name"><b>User Name:</b></label>
+            <input type="text" name="name"  required=true><br>
+            <label for="password"><b>Password:</b></label>
+            <input type="password" name="password" required=true><br>
+            <label>
+            <button type="submit" class="registerbtn">Submit</button>
+          </div>
+    </form>
+    </body>
+</html>
