@@ -18,7 +18,7 @@ app.get('/details', (req, res) => {
         if (err) throw err;
         var dbo = db.db("botdb");
         console.log("connected");
-        dbo.collection("test").find().toArray((err, result) => {
+        dbo.collection("products").find().toArray((err, result) => {
             if (err)
                 console.log(err);
             else
